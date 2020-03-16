@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tu dien</title>
+</head>
+<body>
+<script>
+    let vietnam = ["Xin chao", "Cam on", "Tot","Tam biet", "Yeu","Ghet"];
+    let english = ["Hello", "Thankyou","Good", "Goodbye", "Love", "Hate"];
+    let check = false;
+    let position;
+    let word = prompt("Enter word");
+    for(let i =0; i < english.length; i++) {
+        if (english[i] == word) {
+            position = i;
+            check = true;
+        }
+    }
+    if(check == true){
+        alert(word + " co nghia la: " + vietnam[position]);
+    }
+    else {
+        alert(word + ": khong co trong tu dien");
+    }
+</script>
+</body>
+</html>
